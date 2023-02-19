@@ -19,8 +19,15 @@ main{
     border: 1px black solid;
 }
 
-nav{
+header{
+    display: flex;
+    justify-content: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: yellow;
+    border: 1px black solid;
+}
 
+nav{
     border: 1px black solid;
 }
 
@@ -29,7 +36,11 @@ article{
 }
 
 ul{
+    display: flex;
     list-style: none;
+    justify-content: space-around;
+    align-items: flex-end
+
 }
 
 a {
