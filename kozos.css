@@ -6,13 +6,29 @@
     
 }
 body{
+    display: flex;
     width: 100%;
     background-image: url(hatter/hatter.jpg);
+    justify-content: center;
 }
 
 main{
     width: 80%;
     height: auto;
+    background-color: white;
+    border: 1px black solid;
+}
+
+nav{
+    border: 1px black solid;
+}
+
+article{
+    border: 1px black solid;
+}
+
+ul{
+    list-style: none;
 }
 
 a {
@@ -22,6 +38,7 @@ a {
     margin: 20px 0;
     padding: 10px 20px;
     text-decoration: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: yellow;
     font-size: 18px;
     font-weight: 600;
@@ -57,10 +74,12 @@ a:after {
     opacity: 0;
     transition: .3s;
     z-index: -1;
+    
 }
 
 a:hover {
     color: black;
+    text-shadow: none;
 } 
 
 a:hover:before {
@@ -72,5 +91,12 @@ a:hover:after {
     transform: scaleY(1);
     opacity: 1;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+}
+
 
 
