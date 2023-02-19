@@ -1,0 +1,21 @@
+*{
+    font-family: 'Gloock', serif;
+    font-family: 'Modern Antiqua', cursive;
+}
+
+body{
+    background-image: url(hatter/witcher.png);
+}
+
+nav{
+    border: 1px darkred solid;
+}
+
+article{
+    border: 1px darkred solid;
+}
+
+footer{
+    border: 1px darkred solid; 
+    color: silver;
+}

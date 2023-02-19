@@ -1,23 +1,28 @@
 @import url('https://fonts.cdnfonts.com/css/comic-sans');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Modern+Antiqua&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Comic sans", Arial, Helvetica, sans-serif;
-
 }
 body{
     display: flex;
     width: 100%;
-    background-image: url(hatter/miki.webp);
     justify-content: center;
 }
+
 
 main{
     width: 80%;
     height: auto;
     background-color: white;
     border: 1px black solid;
+}
+
+main.witcher{
+    background-color: black;
+    border: 1px darkred solid;
 }
 
 header{
@@ -28,17 +33,20 @@ header{
     border: 1px black solid;
 }
 
+header.witcher{
+    text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
+    color: silver;
+    border: 1px darkred solid;
+}
+
 h1{
-    filter: drop-shadow(5px 5px 5px #000);
+    filter: drop-shadow(5px 5px 0px #000);
 }
 
-nav{
-    border: 1px black solid;
+h1.witcher{
+    filter: drop-shadow(5px 5px 3px darkred);
 }
 
-article{
-    border: 1px black solid;
-}
 
 ul{
     display: flex;
@@ -63,6 +71,11 @@ a {
     z-index: 1;
 }
 
+.witcher a{
+    text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
+    color: silver;
+}
+
 a:before {
     content: '';
     position: absolute;
@@ -77,6 +90,10 @@ a:before {
     transition: .3s;
     }
 
+.witcher a:before{
+    border-top: 2px solid darkred;
+    border-bottom: 2px solid darkred;
+}
 
                 
 a:after {
@@ -94,11 +111,19 @@ a:after {
     
 }
 
+.witcher a:after{
+    background-color:silver ;
+}
+
 a:hover {
     color: black;
     text-shadow: none;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 } 
+
+.witcher a:hover{
+    color: darkred;
+}
 
 a:hover:before {
     transform: scaleY(1);
@@ -112,9 +137,7 @@ a:hover:after {
 
 footer{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 1px black solid;
+    justify-content: center;
     align-content: space-around;
 }
 

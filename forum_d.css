@@ -1,0 +1,19 @@
+*{
+    font-family: "Comic sans", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(hatter/miki.webp);
+}
+
+nav{
+    border: 1px black solid;
+}
+
+article{
+    border: 1px black solid;
+}
+
+footer{
+    border: 1px black solid;
+ }
