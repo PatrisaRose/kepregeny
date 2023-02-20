@@ -1,6 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/comic-sans");
-@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Modern+Antiqua&display=swap");
 
 * {
   padding: 0;
@@ -21,11 +19,6 @@ main {
   border: 1px black solid;
 }
 
-main.witcher {
-  background-color: black;
-  border: 1px darkred solid;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -34,18 +27,8 @@ header {
   border: 1px black solid;
 }
 
-header.witcher {
-  text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
-  color: silver;
-  border: 1px darkred solid;
-}
-
 h1 {
   filter: drop-shadow(5px 5px 0px #000);
-}
-
-h1.witcher {
-  filter: drop-shadow(5px 5px 3px darkred);
 }
 
 ul {
@@ -70,11 +53,6 @@ a {
   z-index: 1;
 }
 
-.witcher a {
-  text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
-  color: silver;
-}
-
 a:before {
   content: "";
   position: absolute;
@@ -87,11 +65,6 @@ a:before {
   transform: scaleY(2);
   opacity: 0;
   transition: 0.3s;
-}
-
-.witcher a:before {
-  border-top: 2px solid darkred;
-  border-bottom: 2px solid darkred;
 }
 
 a:after {
@@ -108,18 +81,10 @@ a:after {
   z-index: -1;
 }
 
-.witcher a:after {
-  background-color: silver;
-}
-
 a:hover {
   color: black;
   text-shadow: none;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-
-.witcher a:hover {
-  color: darkred;
 }
 
 a:hover:before {
