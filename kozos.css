@@ -1,145 +1,139 @@
-@import url('https://fonts.cdnfonts.com/css/comic-sans');
-@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Modern+Antiqua&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+@import url("https://fonts.cdnfonts.com/css/comic-sans");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Modern+Antiqua&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-main{
-    width: 80%;
-    height: auto;
-    background-color: white;
-    border: 1px black solid;
+body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-main.witcher{
-    background-color: black;
-    border: 1px darkred solid;
+main {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border: 1px black solid;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: yellow;
-    border: 1px black solid;
+main.witcher {
+  background-color: black;
+  border: 1px darkred solid;
 }
 
-header.witcher{
-    text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
-    color: silver;
-    border: 1px darkred solid;
+header {
+  display: flex;
+  justify-content: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: yellow;
+  border: 1px black solid;
 }
 
-h1{
-    filter: drop-shadow(5px 5px 0px #000);
+header.witcher {
+  text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
+  color: silver;
+  border: 1px darkred solid;
 }
 
-h1.witcher{
-    filter: drop-shadow(5px 5px 3px darkred);
+h1 {
+  filter: drop-shadow(5px 5px 0px #000);
 }
 
+h1.witcher {
+  filter: drop-shadow(5px 5px 3px darkred);
+}
 
-ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: flex-end
-
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 a {
-    position: relative;
-    display: block;
-    text-transform: uppercase;
-    margin: 20px 0;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: yellow;
-    font-size: 18px;
-    font-weight: 600;
-    transition: .5s;
-    z-index: 1;
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: yellow;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+  z-index: 1;
 }
 
-.witcher a{
-    text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
-    color: silver;
+.witcher a {
+  text-shadow: -1px 0 darkred, 0 1px darkred, 1px 0 darkred, 0 -1px darkred;
+  color: silver;
 }
 
 a:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: scaleY(2);
-    opacity: 0;
-    transition: .3s;
-    }
-
-.witcher a:before{
-    border-top: 2px solid darkred;
-    border-bottom: 2px solid darkred;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
 }
 
-                
+.witcher a:before {
+  border-top: 2px solid darkred;
+  border-bottom: 2px solid darkred;
+}
+
 a:after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-    transform: scale(0);
-    opacity: 0;
-    transition: .3s;
-    z-index: -1;
-    
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
 }
 
-.witcher a:after{
-    background-color:silver ;
+.witcher a:after {
+  background-color: silver;
 }
 
 a:hover {
-    color: black;
-    text-shadow: none;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-} 
+  color: black;
+  text-shadow: none;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
 
-.witcher a:hover{
-    color: darkred;
+.witcher a:hover {
+  color: darkred;
 }
 
 a:hover:before {
-    transform: scaleY(1);
-    opacity: 1;
+  transform: scaleY(1);
+  opacity: 1;
 }
 
 a:hover:after {
-    transform: scaleY(1);
-    opacity: 1;
+  transform: scaleY(1);
+  opacity: 1;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
 }
-
-
-
