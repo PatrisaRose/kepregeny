@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Gergely Patrícia" />
     <meta name="author" content="Schopper Zsolt" />
+    <link rel="stylesheet" href="donald.css" />
     <link rel="stylesheet" href="forum_d.css" />
-    <link rel="stylesheet" href="kozos.css" />
     <title></title>
-  </head>
-  <body>
+</head>
+
+<body>
     <main>
-      <header>
-        <h1>Donald kacsa: Az ijedős kísértet?</h1>
-      </header>
-      <nav>
-        <ul>
-          <li><a href="donald.html">Kezdőlap</a></li>
-          <li><a href="forum_d.html">Fórum Donaldhoz</a></li>
-          <li><a href="witcher.html">Witcher</a></li>
-          <li><a href="forum_w.html">Fórum Witcherhez</a></li>
-        </ul>
-      </nav>
-      <footer>Készítette: Schopper Zsolt és Gergely Patrícia.</footer>
+        <header>
+            <h1>Donald kacsa: Az ijedős kísértet?</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="donald.html">Kezdőlap</a></li>
+                <li><a href="forum_d.html">Fórum Donaldhoz</a></li>
+                <li><a href="witcher.html">Witcher</a></li>
+                <li><a href="forum_w.html">Fórum Witcherhez</a></li>
+            </ul>
+        </nav>
+        <form action="forum_d.html" method="get">
+            <fieldset>
+                <legend>Adatok</legend>
+                <label for="nev"></label>
+                <input id="nev" type="text" placeholder="Mi a neved?" />
+                <label for="email"></label>
+                <input id="email" type="text" placeholder="Mi az e-mail címed?" />
+            </fieldset>
+            <fieldset>
+                <legend>Szellem</legend>
+                <div>Láttál valaha szellemet?</div>
+                <input id="kisertet_igen" type="radio" name="kisertet" value="igen" />
+                <label for="kisertet_igen">Igen, láttam!</label><br>
+                <input id="kisertet_nem" type="radio" name="kisertet" value="nem" />
+                <label for="kisertet_nem">Hál'istennek még nem!</label>
+            </fieldset>
+            <fieldset>
+                <label for="mese">Ha láttál, meséld el milyen volt!</label><br>
+                <textarea name="mese" id="mese" cols="100" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="mennyire">Mennyire féltél?</label>
+                <input type="range" id="mennyire" name="mennyire" />
+            </fieldset>
+            <fieldset>
+                <label for="mikor">... és ez mikor volt?</label>
+                <input type="date" id="mikor" name="mikor" value="2023-02-18" />
+                <label for="ora">... na de az órát és a percet is tudod??</label>
+                <input type="date" id="ora" name="ora" value="00:00" />
+            </fieldset>
+        </form>
+        <footer>
+            <div>Készítette: Gergely Patrícia és Schopper Zsolt</div>
+            <div><a href="https://github.com/patrisarose/kepregeny/">Github oldal</a></div>
+        </footer>
     </main>
-  </body>
+</body>
+
 </html>

@@ -71,7 +71,7 @@ ul {
   align-items: flex-end;
 }
 
-a {
+nav a {
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -86,7 +86,7 @@ a {
   z-index: 1;
 }
 
-a:before {
+nav a:before {
   content: "";
   position: absolute;
   top: 0;
@@ -100,7 +100,7 @@ a:before {
   transition: 0.3s;
 }
 
-a:after {
+nav a:after {
   content: "";
   position: absolute;
   top: 2px;
@@ -114,29 +114,33 @@ a:after {
   z-index: -1;
 }
 
-a:hover {
+nav a:hover {
   color: black;
   text-shadow: none;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-a:hover:before {
+nav a:hover:before {
   transform: scaleY(1);
   opacity: 1;
 }
 
-a:hover:after {
+nav a:hover:after {
   transform: scaleY(1);
   opacity: 1;
 }
 
 footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   align-items: center;
   border: 1px black solid;
   justify-content: center;
+}
 
+footer a {
+  text-decoration: wavy;
+  color: black;
 }
 
 div.size_debug {
