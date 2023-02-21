@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="size_debug"></div>
     <main>
         <header>
             <h1>Donald kacsa: Az ijedős kísértet?</h1>
@@ -34,28 +35,32 @@
                 <input id="email" type="text" placeholder="Mi az e-mail címed?" />
             </fieldset>
             <fieldset>
-                <legend>Szellem?</legend>
-                <div>Láttál valaha szellemet?</div>
+                <legend>Kísértet?</legend>
+                <div>Láttál valaha kísértetet?</div>
                 <input id="kisertet_igen" type="radio" name="kisertet" value="igen" />
                 <label for="kisertet_igen">Igen, láttam!</label><br>
                 <input id="kisertet_nem" type="radio" name="kisertet" value="nem" />
                 <label for="kisertet_nem">Hál'istennek még nem!</label>
             </fieldset>
             <fieldset>
-                <legend>Szellem!</legend>
+                <legend>Kísértet!</legend>
                 <label for="mese">Ha láttál, meséld el milyen volt!</label><br>
-                <textarea name="mese" id="mese" cols="100" rows="5"></textarea>
+                <textarea name="mese" id="mese" rows="5" style="width: 100%"></textarea>
             </fieldset>
             <fieldset>
                 <label for="mennyire">Mennyire féltél?</label>
                 <input type="range" id="mennyire" name="mennyire" />
             </fieldset>
-            <fieldset>
+            <fieldset class="flex-fieldset">
+
                 <label for="mikor">... és ez mikor volt?</label>
                 <input type="date" id="mikor" name="mikor" value="2023-02-18" />
                 <label for="ora">... na de az órát és a percet is tudod??</label>
                 <input type="time" id="ora" name="ora" value="00:00" />
             </fieldset>
+            <div class="text-center">
+                <button class="submit">Elküld!</button>
+            </div>
         </form>
         <footer>
             <div>Készítette: Gergely Patrícia és Schopper Zsolt</div>
