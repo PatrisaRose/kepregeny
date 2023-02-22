@@ -11,8 +11,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-
-  /* font-family: "Gloock", serif; */
+  margin: 20px 0;
   font-family: "Modern Antiqua", cursive;
   background-image: url(hatter/witcher.png);
 }
@@ -22,6 +21,7 @@ main {
   height: auto;
   background-color: black;
   border: 1px darkred solid;
+  padding: 15px;
 }
 
 header {
@@ -112,9 +112,6 @@ nav a:hover:after {
   opacity: 1;
 }
 
-article {
-  border: 1px darkred solid;
-}
 
 .egy {
   display: flex;
