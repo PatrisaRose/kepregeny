@@ -112,21 +112,6 @@ nav a:hover:after {
   opacity: 1;
 }
 
-
-.egy {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 5px;
-}
-
-.tobb {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 5px;
-}
-
 footer {
   border: 1px darkred solid;
   color: silver;
