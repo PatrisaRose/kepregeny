@@ -1,30 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Gergely Patrícia" />
-    <meta name="author" content="Schopper Zsolt" />
-    <link rel="stylesheet" href="witcher.css" />
-    <title></title>
-  </head>
-  <body >
-    <main class="witcher">
-      <header class="witcher">
-          <h1 class="witcher">The Witcher: Egy csepp igazság?</h1>
-      </header>
-      <nav>
-        <div class="witcher">
-          <ul>
-            <li><a href="donald.html">Donald Kacsa</a></li>
-            <li><a href="forum_d.html">Fórum Donaldhoz</a></li>
-            <li><a href="witcher.html">Witcher</a></li>
-            <li><a href="forum_w.html">Fórum Witcherhez</a></li>
-          </ul>
-        </div>
-      </nav>
-      <footer>Készítette: Schopper Zsolt és Gergely Patrícia.</footer>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Gergely Patrícia" />
+  <meta name="author" content="Schopper Zsolt" />
+  <link rel="stylesheet" href="witcher.css" />
+  <title></title>
+</head>
+
+<body>
+  <main class="witcher">
+    <header class="witcher">
+      <h1 class="witcher">The Witcher: Egy csepp igazság?</h1>
+    </header>
+    <nav>
+      <div class="witcher">
+        <ul>
+          <li><a href="donald.html">Donald Kacsa</a></li>
+          <li><a href="forum_d.html">Fórum Donaldhoz</a></li>
+          <li><a href="witcher.html">Witcher</a></li>
+          <li><a href="forum_w.html">Fórum Witcherhez</a></li>
+        </ul>
+      </div>
+    </nav>
+    <article>
+      <form action="#">
+        <fieldset>
+          <legend>Tudás köre</legend>
+          <h3>Alapozó kérdések</h3>
+          <div class="form-control">
+            <div class="form-label">Hogy hívták a lovát?</div>
+            <div class="form-input">
+              <input type="radio" name="Beugro_k1" value="A" /> <label>Zabos</label><br>
+              <input type="radio" name="Beugro_k1" value="B" /> <label>Hernyó</label><br>
+              <input type="radio" name="Beugro_k1" value="C" /> <label>Keszeg</label><br>
+              <input type="radio" name="Beugro_k1" value="D" /> <label>Ló</label><br>
+            </div>
+            <!-- </div>
+          <div class="form-control"> -->
+            <div class="form-label"><label>Milyen a szeme színe?</label></div>
+            <div class="form-input"><input type="color" /></div>
+          </div>
+          <h3>Amit tudnunk kell</h3>
+          <div class="form-control">
+            <div class="form-label"><label for="book-select">Melyik volt a kedvenc Witcher könyved?</label></div>
+            <div class="form-input">
+              <select id="book-select">
+                <optgroup label="Magyar nyelven megjelent könyvek">
+                  <option>Vaják: Az utolsó kívánság</option>
+                  <option>Vaják: A végzet kardja</option>
+                  <option>Vaják: Tündevér</option>
+                  <option>Vaják: A megvetés ideje</option>
+                  <option>Vaják: Tűzkeresztség</option>
+                  <option>Vaják: Fecske-torony</option>
+                  <option>Vaják: A tó úrnője</option>
+                  <option>Vaják: Viharidő</option>
+                </optgroup>
+                <optgroup label="Angolul megjelent könyvek">
+                  <option>The Witcher (Wiedźmin)</option>
+                  <option>Sword of Destiny (Miecz Przeznaczenia)</option>
+                  <option>The Last Wish (Ostatnie życzenie)</option>
+                  <option>Blood of Elves (Krew elfów)</option>
+                  <option>Time of Contempt (Czas pogardy)</option>
+                  <option>Baptism of Fire (Chrzest ognia)</option>
+                  <option>The Tower of the Swallow (Wieża Jaskółki)</option>
+                  <option>The Lady of the Lake (Pani Jeziora)</option>
+                  <option>Season of Storms (Sezon burz)</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="form-control">
+            <div class="form-label">
+              <h4>A Melyik sorozat epizódokat láttad már?</h4>
+            </div>
+            <div class="form-input opt-flex">
+              <div> 1. évad<br>
+                <input type="checkbox" name="S1E01" id=""><label>A vég kezdete</label><br>
+                <input type="checkbox" name="S1E02" id=""><label>Négy márka</label><br>
+                <input type="checkbox" name="S1E03" id=""><label>Az áruló Hold</label><br>
+                <input type="checkbox" name="S1E04" id=""><label>Eljegyzési lakomák, fattyúk és temetések</label><br>
+                <input type="checkbox" name="S1E05" id=""><label>Vágyak útján</label><br>
+                <input type="checkbox" name="S1E06" id=""><label>Ritka példányok</label><br>
+                <input type="checkbox" name="S1E07" id=""><label>A bukás előtt</label><br>
+                <input type="checkbox" name="S1E08" id=""><label>Sokkal többek</label><br>
+              </div>
+              <div> 2. évad<br>
+                <input type="checkbox" name="S2E01" id=""><label>Egy csepp igazság</label><br>
+                <input type="checkbox" name="S2E02" id=""><label>Kaer Morhen</label><br>
+                <input type="checkbox" name="S2E03" id=""><label>Ami elveszett</label><br>
+                <input type="checkbox" name="S2E04" id=""><label>A redaniani titkosszolgálat</label><br>
+                <input type="checkbox" name="S2E05" id=""><label>Fordíts hátat</label><br>
+                <input type="checkbox" name="S2E06" id=""><label>Kedves barátom...</label><br>
+                <input type="checkbox" name="S2E07" id=""><label>Voleth Meir</label><br>
+                <input type="checkbox" name="S2E08" id=""><label>Család</label><br>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Lélek köre</legend>
+          <div class="form-control">
+            <div class="form-label">
+              <label>Ha holnap Vajákká avantának, mi lenne a neved?</label>
+            </div>
+            <div class="form-input">
+              <input type="password" />
+            </div>
+            <div class="form-label"><label>Mi a kedvenc Witcher weboldalad?</label></div>
+            <div class="form-input">
+              <input type="url" />
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-label"></div>
+        <div class="form-input">
+          <label>input image</label><input type="image" />
+        </div><label>input submit</label><input type="submit" /></div>
+      </form>
+    </article>
+    <footer>Készítette: Schopper Zsolt és Gergely Patrícia.</footer>
+  </main>
+</body>
+
 </html>
+<!--
+  Witcher toborzás
+  - milyen színű szeme Geraltnak?
+  mikor hallottál róla
+  játszottál-e a játékról
+  olvastál-e könyvet
+  kedvenc varázslat
+  jelek:
+  - Aard
+  - Igni
+  - Yrden
+  - Quen
+  - Axii
+
+
+
+ -->
