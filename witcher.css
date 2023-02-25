@@ -202,6 +202,7 @@ input[type="submit" i] {
 }
 
 div.size_debug {
+  display: none;
   position: fixed;
   left: 10px;
   z-index: 999;
