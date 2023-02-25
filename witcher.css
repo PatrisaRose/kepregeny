@@ -50,8 +50,8 @@ ul {
   align-items: flex-end;
 }
 
-a{
-  cursor: url(kurzor/The_Witcher_Herald_SilverSword.png) , pointer;
+a {
+  cursor: url(kurzor/The_Witcher_Herald_SilverSword.png), pointer;
 }
 
 nav a {
@@ -132,6 +132,93 @@ section > img {
   flex: 1 1 auto;
 }
 
+.opt-flex {
+  display: flex;
+  flex: 1 1 50%;
+  flex-flow: row;
+  gap: 10px;
+}
+
+.form-control {
+  display: flex;
+  /* flex: 1 1 400px; */
+  flex-flow: row wrap;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.form-control .form-label {
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-width: 30%;
+}
+.form-control .form-input {
+  flex-shrink: 2;
+  flex-grow: 2;
+  min-width: 50%;
+}
+.form-control .form-label,
+.form-control .form-input {
+  border: 1px solid yellow;
+  /* border: 0; */
+}
+
+.form-control {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 0.5em;
+}
+
+.form-control .form-label {
+  padding: 0.5em 1em 0.5em 0;
+  flex: 1;
+}
+.form-control .form-input {
+  flex: 2;
+}
+.form-control .form-label,
+.form-control .form-input {
+  border: 1px solid yellow;
+  border: 0;
+}
+
+input[type="url" i],
+input[type="text" i],
+input[type="color" i],
+select {
+  width: 100%;
+}
+
+input[type="submit" i] {
+  font-family: "Modern Antiqua", cursive;
+  font-style: italic;
+  font-weight: 800;
+  background: maroon;
+  color: black;
+  font-size: 120%;
+  padding: 5px 10px;
+}
+
+div.size_debug {
+  position: fixed;
+  left: 10px;
+  z-index: 999;
+  height: 30px;
+  background-color: aliceblue;
+  border: 2px solid cadetblue;
+  width: 70px;
+  color: navy;
+  padding: 0 10px;
+}
+
+div.size_debug:after {
+  content: "Wide";
+}
+
+/*****  Reszponzív töréspontok *****/
+
 @media screen and (max-width: 1600px) {
   div.size_debug:after {
     content: "3XL";
@@ -185,40 +272,6 @@ section > img {
   }
 }
 
-.opt-flex {
-  display: flex;
-  flex: 1 1 50%;
-  flex-flow: row;
-  gap: 10px;
-}
-
-
-.form-control {
-  display: flex;
-  flex: 1 1 400px;
-  flex-flow: row wrap;
-  gap: 10px;
-  align-items: stretch;
-}
-
-.form-control .form-label {
-  flex-shrink: 1;
-  flex-grow: 1;
-  min-width: 30%;
-}
-.form-control .form-input {
-  flex-shrink: 2;
-  flex-grow: 2;
-  min-width:50%;
-}
-.form-control .form-label,
-.form-control .form-input {
-  border: 1px solid yellow;
-  border: 0;
-}
-
-/*****  Reszponzív töréspontok *****/
-
 @media screen and (max-width: 576px) {
   div.size_debug:after {
     content: "M";
@@ -238,7 +291,7 @@ section > img {
     width: 100%;
   }
 
-  .invisible {
+  /* .invisible {
     border: 0 none;
     padding: 0;
   }
@@ -250,6 +303,13 @@ section > img {
   .flex-fieldset > input {
     flex: 1 1 auto;
   }
+ */
+
+  .form-control {
+    display: flex;
+    /* flex: 1 1 400px; */
+    flex-flow: col;
+  }
 
   .opt-flex {
     flex-flow: column;
@@ -258,5 +318,4 @@ section > img {
   .form-control {
     flex-flow: column;
   }
-
 }
